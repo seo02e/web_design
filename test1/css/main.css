@@ -5,8 +5,101 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "맑은 고딕";
   font-size: 14px;
   color: #333;
   box-sizing: border-box;
+}
+
+img{
+
+  vertical-align: top;
+}
+
+.title__img img{
+  width: 200px;
+  height: 40px;
+}
+
+.cf:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.hidden{
+  display: none;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header{
+  width: 100px;
+  background: #aaa;
+}
+.slides{
+  width: 300px;
+  background: #bbb;
+}
+main{
+  width: 200px;
+  background: #ccc;
+}
+footer{
+  width: 100px;
+  background: #ddd;
+}
+
+header .logo{
+  width: 200px;
+  background: #999;
+  float: left;
+  height: 100%;
+}
+
+header nav{
+  width: 1000px;
+  background: #888;
+  float: right;
+  height: 100%;
+}
+
+main section{
+  width: 400px;
+  float: left;
+  height: 100%;
+}
+
+main .notice{
+  background: #777;
+}
+
+main .banner{
+  background: #555;
+}
+
+main .quick_links{
+  background: #555;
+}
+
+footer div{
+  float: left;
+  height: 100%;
+}
+
+footer .logo{
+  width: 200px;
+  background: #444;
+}
+
+footer .copyright{
+  width: 800px;
+  background: #333;
+}
+
+footer .sns{
+  width: 200px;
+  float: left;
+  background: #222;
+  height: 100%;
 }
