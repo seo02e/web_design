@@ -38,3 +38,49 @@ aside nav{
 aside .spot-menu{
   height: 50px;
 }
+
+.slide-wrapper{
+  height: 400px;
+  position: relative;
+}
+.slide-wrapper>*{
+  border: 1px solid green;
+}
+.slide-image{
+  height: 400px;
+}
+.slide-banner{
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.shortcut{
+  border: 1px solid #ccc;
+  height: 200px;
+}
+
+.news-gallery{
+  height: 250px;
+}
+.news-gallery>*{
+  border: 1px solid #ddd;
+}
+
+footer{
+  display: flex;
+}
+footer>*{
+  border: 1px solid #ccc;
+}
+.footer-logo{
+  width: 200px;
+}
+.footer-contents{
+  flex: 1;
+}
+.footer-contents>*{
+  border: 1px solid #ccc;
+  height: 60px;
+}
