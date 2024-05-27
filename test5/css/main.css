@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+a{
+  color: inherit;
+}
+
+main{
+  display: flex;
+}
+main>*{
+  border: 1px solid #ccc;
+}
+aside{
+  width: 200px;
+}
+.content{
+  flex: 1;
+}
+aside>*{
+  border: 1px solid #ccc;
+}
+aside header{
+  height: 100px;
+}
+aside nav{
+  height: 400px;
+}
+aside .spot-menu{
+  height: 50px;
+}
