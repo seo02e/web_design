@@ -30,4 +30,4 @@ popupLink.click(function(e){
 });
 popupCloseBtn.click(function(){
   popup.removeClass('active');
-});
+});  ㄴ
