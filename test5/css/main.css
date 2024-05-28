@@ -157,24 +157,87 @@ aside .spot-menu li a:hover{
 .tabcontent>div.active{
   display: block;
 }
-
-.news-gallery>*{
-  border: 1px solid #ddd;
+#notice{
+  padding: 0 5px;
+}
+#notice li{
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  border-bottom: 1px solid #ebebeb;
+}
+#notice li:last-child{
+  border-bottom: none;
+}
+#notice li:hover{
+  background: #ebebeb;
+}
+#notice li a:hover{
+  font-weight: bold;
+}
+#gallery{
+  padding: 30px 10px;
+}
+#gallery ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+#gallery ul li{
+  transition: 0.3s;
+}
+#gallery ul li img{
+  width: 100%;
+}
+#gallery ul li:hover{
+  opacity: 0.5;
 }
 
 footer{
   display: flex;
-}
-footer>*{
-  border: 1px solid #ccc;
+  height: 120px;
+  align-items: center;
+  text-align: center;
 }
 .footer-logo{
   width: 200px;
 }
 .footer-contents{
   flex: 1;
+  text-align-last: left;
 }
-.footer-contents>*{
-  border: 1px solid #ccc;
-  height: 60px;
+.footer-menu ul{
+  display: flex;
+  margin-bottom: 20px;
 }
+.footer-menu ul li{
+  padding: 0 15px;
+}
+.footer-menu ul li+li{
+  border-left: 1px solid #ccc;
+}
+.footer-menu ul li a:hover{
+  text-decoration: underline;
+}
+
+#popup{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 10;
+}
+#popup .popup-content{
+  width: 400px;
+  padding: 20px 20px 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+}  
