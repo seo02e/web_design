@@ -16,11 +16,22 @@ slide.eq(currentIdx).fadeIn();
 setInterval(showNextSlide, 3000);
 
 function showNextSlide(){
-  let nextIdx = (currentIdx + 1)% slideCount;
+  let nextIdx = (currentIdx + 1) % slideCount;
   slide.eq(currentIdx).fadeOut();
   slide.eq(nextIdx).fadeIn();
   currentIdx = nextIdx;
 }
+let tabMenu = $('.tabmenu li');
+let tabContent = $('.tabcontent > div');
+tabMenu.click(function(e){
+  e.preventDefault();
+  tabMenu.removeClass('active');
+  $(this).addClass('active');
+  let target = $(this).find('a').attr('href');
+  tabContent.removeClass('active');
+  $(target).addClass('active');
+});
+
 
 let popupLink = $('#notice li:first');
 let popup = $('#popup');
