@@ -54,60 +54,124 @@
       </div>
     </aside>
 
-    <div class="container">
-      <div class="wrapper">
-        <div class="slide">
-          <div class="slide-image">
-            <img src="./image/slide_d_01.jpg" alt="slide_1">
-            <img src="./image/slide_d_02.jpg" alt="slide_2">
-            <img src="./image/slide_d_03.jpg" alt="slide_3">
-          </div>
+    <div class="main-content">
+      <div class="slide-wrapper">
+        <div class="slide-image">
+          <ul class="container">
+            <li class="slide">
+              <a href="#">
+                <img src="./image/slide_d_01.jpg" alt="slide_1">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#">
+                <img src="./image/slide_d_02.jpg" alt="slide_2">
+              </a>
+            </li><li class="slide">
+              <a href="#">
+                <img src="./image/slide_d_03.jpg" alt="slide_3">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="banner">
-        <div class="banner_image">
-          <img src="./image/banner_01.png" alt="banner_1">
-          <img src="./image/banner_02.png" alt="banner_2">
-          <img src="./image/banner_03.png" alt="banner_3">
-          <img src="./image/banner_04.png" alt="banner_4">
-          <img src="./image/banner_05.png" alt="banner_5">
-          <img src="./image/banner_06.png" alt="banner_6">
-          <img src="./image/banner_07.png" alt="banner_7">
-        </div>
+      <div class="slide_banner">
+        <ul>
+          <li><a href="#">
+            <img src="./image/banner_01.png" alt="banner_1">
+          </a></li>
+          <li><a href="#">
+            <img src="./image/banner_02.png" alt="banner_2">
+          </a></li>
+          <li><a href="#">
+            <img src="./image/banner_03.png" alt="banner_3">
+          </a></li>
+          <li><a href="#">
+            <img src="./image/banner_04.png" alt="banner_4">
+          </a></li>
+          <li><a href="#">
+            <img src="./image/banner_05.png" alt="banner_5">
+          </a></li>
+          <li><a href="#">
+            <img src="./image/banner_06.png" alt="banner_6">
+          </a></li>
+          <li><a href="#">
+            <img src="./image/banner_07.png" alt="banner_7">
+          </a></li>
+        </ul>
       </div>
-      <div class="contents">
-        <ul class="notice">
+      <div class="news-gallery">
+        <article id="notice">
           <div class="title">공지사항</div>
-          <li class="substance">
-            <ul>
-              <li><a href="#">여행 후기 이벤트 안내</a><span class="date">2024.03.01</span></li>
-              <li>서울구석구석 여행관련 안내사항<span class="date">2024.03.01</span></li>
-              <li>이벤트 당첨자 안내<span class="date">2024.03.01</span></li>
-              <li>서울 장미 축제 안내<span class="date">2024.03.01</span></li>
-              <li>고객 서비스 점검 안내<span class="date">2024.03.01</span></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="gallery">
+          <ul>
+            <li><a href="#">여행 후기 이벤트 안내</a><span class="date">2024.03.01</span></li>
+            <li>서울구석구석 여행관련 안내사항<span class="date">2024.03.01</span></li>
+            <li>이벤트 당첨자 안내<span class="date">2024.03.01</span></li>
+            <li>서울 장미 축제 안내<span class="date">2024.03.01</span></li>
+            <li>고객 서비스 점검 안내<span class="date">2024.03.01</span></li>
+          </ul>
+        </article>
+
+        <article id="gallery">
           <div class="title">갤러리</div>
-          <li class="gallery_image">
-            <ul>
+          <ul>
+            <li><a href="#">
               <img src="./image/gallery_01.png" alt="gallery_1">
+            </a>
+            <h3>gallery title1</h3>
+            </li>
+            <li><a href="#">
               <img src="./image/gallery_02.png" alt="gallery_2">
+            </a>
+            <h3>gallery title2</h3>
+            </li>
+            <li><a href="#">
               <img src="./image/gallery_03.png" alt="gallery_3">
-            </ul>
-          </li>
-        </ul>
+            </a>
+            <h3>gallery title3</h3>
+            </li>
+          </ul>
+        </article>
       </div>
     </div>
   </main>
+  
   <footer>
-    <div class="logo"></div>
-    <div class="content">
-      <div class="menu"></div>
-      <div class="copyright"></div>
+    <div class="logo">
+      <a href="#"><img src="./image/footer_logo.png" alt="footer_logo"></a>
     </div>
-    <div class="familysite"></div>
+    <div class="footer-content">
+      <div class="footer-menu">
+        <ul>
+          <li><a href="">기업소개</a></li>
+          <li><a href="">이용약관 개인정보처리방침</a></li>
+          <li><a href="">이메일무단수집거부</a></li>
+          <li><a href="">사이트맵</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHT&copy; by 서울 구석구석. ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+    <div class="family-site">
+      <select id="family-site">
+        <option value="">서울시청</option>
+        <option value="">서울관광재단</option>
+        <option value="">관광불편 처리센터</option>
+      </select>
+    </div>
   </footer>
+
+  <div class="popup">
+    <div class="popup-content">
+      <h2>여행 후기 이벤트 안내</h2>
+      <p>서울 구석구석입니다. 여행 후기 이벤트를 2024년 3월부터 시작하고자 합니다. 고객님의 소중한 이야기 중 '베스트 여행 후기'를 선정하여 감사의 마음을 전하는 이벤트입니다.</p>
+    </div>
+    <div class="close">닫기</div>
+  </div>
+
+
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
   font-size: 14px;
 }
 main{
-  display: flex; /*주의*/
+  display: flex; /*까먹*/
 }
 
 aside{
@@ -19,7 +19,7 @@ aside{
 .mainmenu>li{
   border-bottom: 1px solid #ccc;
   margin: 0 10px;
-  position: relative; /*주의*/
+  position: relative; /*까먹*/
 }
 .submenu>li{
   display: none;
@@ -37,12 +37,9 @@ aside{
 }
 
 
-.container{
+.main-content{
   width: calc(100% - 200px);
 }
 
-.slide-image > img{
-  height: 400px;
-  object-fit: cover;
-}
+
 
