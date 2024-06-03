@@ -75,10 +75,96 @@ aside nav li:hover>a{
   width: calc(100% - 200px);
 }
 
-slide-wrapper{
+.slide-wrapper{
   height: 400px;
   position: relative;
   overflow: hidden;
 }
+.slide>a>img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
+.slide-image .container{
+  position: relative;
+}
+.slide-image .slide{
+  position: absolute;
+  display: none;
+}
 
+.slide_banner ul{
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide_banner img{
+  height: 130px;
+}
+
+.news-gallery{
+  display: flex;
+  padding: 0 10px;
+  gap: 30px;
+}
+
+.news-gallery>*{
+  height: 250px;
+  flex: 1;
+}
+.news-gallery h2{
+  border-radius: 5px 5px 0 0;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #666;
+  color: #fff;
+  margin-bottom: -2px;
+}
+.news-gallery ul{
+  border: 1px solid #666;
+}
+
+#notice ul li{
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 5px;
+}
+
+#notice ul li:last-child{
+  border-bottom: none;
+}
+
+#notice ul li:hover{
+  background: #ebebeb;
+}
+#notice ul li:hover a{   /*원래는 li a:hover이나 고의적으로 변경함*/
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#gallery ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 20px;
+}
+
+#gallery ul li{
+  transition: 0.3s;
+  text-align: center;
+}
+
+#gallery ul li img{
+  width: 100%;
+  transition: 0.3s; /*통일성을 위해 고의적 추가 속성*/
+}
+
+#gallery ul li img:hover{
+  opacity: 0.5;
+} 
