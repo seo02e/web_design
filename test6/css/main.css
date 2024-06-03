@@ -236,7 +236,7 @@ footer .footer-content{
   cursor: pointer;
   padding: 5px 8px;
 }
-#popup .active{
+#popup.active{
   display: block;
 }
 
