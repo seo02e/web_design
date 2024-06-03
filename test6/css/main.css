@@ -9,37 +9,76 @@
   box-sizing: border-box;
   font-size: 14px;
 }
+a{
+  color: #333;
+}
 main{
   display: flex; /*까먹*/
 }
 
-aside{
-  width: 200px;
+aside nav{
+  background: #fff;
+  margin: 0 10px 20px;
+  border: 1px solid #ccc;
+}
+aside nav li{
+  line-height: 40px;
+  height: 40px;
+}
+aside nav a{
+  display: block;
+  color: #333;
+  padding: 0 5px;
+  transition: 0.3s;
+}
+aside nav li:hover>a{
+  background: #666;
+  color: #fff;
 }
 .mainmenu>li{
+  position: relative; /*서브메뉴의 위치 기준으로 하기 위함*/
+}
+.mainmenu>li:not(:last-child)>a{
   border-bottom: 1px solid #ccc;
-  margin: 0 10px;
-  position: relative; /*까먹*/
 }
-.submenu>li{
+.submenu{
+  background: rgba(0,0,0,.7);
   display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: calc(100vw - 200px);
+  z-index: 100;
 }
-
+.submenu li{
+  display: inline-block;
+}
+.submenu li a{
+  color: #ccc;
+}
 
 .spotmenu{
   display: flex;
+  justify-content: center;
 }
-.spotmenu > div{
-  gap: 10px;
+.spotmenu div{
+  padding: 0 10px;
 }
-.spotmenu > a:not(:last-child){
-  border-right: 1px solid #ccc;
+.spotmenu div:not(:last-child){
+  border-right: 1px solid #666;
 }
-
+.spotmenu div:hover a{
+  text-decoration: underline;
+}
 
 .main-content{
   width: calc(100% - 200px);
 }
 
+slide-wrapper{
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
 
 
