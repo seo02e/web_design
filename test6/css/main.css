@@ -78,7 +78,7 @@ aside nav li:hover>a{
 .slide-wrapper{
   height: 400px;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /*object-fit: cover가 있으니 안해도 됨. 명확하게 하기 위함*/
 }
 .slide>a>img{
   width: 100%;
@@ -168,3 +168,79 @@ aside nav li:hover>a{
 #gallery ul li img:hover{
   opacity: 0.5;
 } 
+
+footer{
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+
+footer .logo{
+  width: 200px;
+}
+
+footer .footer-content{
+  flex: 1;
+  text-align: left;
+}
+
+.footer-menu ul{
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer-menu ul li{
+  padding: 0 15px;
+}
+.footer-menu ul li+li{
+  border-left: 1px solid #ccc;
+}
+.footer-menu ul li:hover a{ /*원래는 li a:hover임 고의적 변경*/
+  text-decoration: underline;
+}
+.family-site{
+  width: 230px;
+}
+.family-site select{
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+
+#popup{
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+#popup .popup-content{
+  width: 400px;
+  padding: 20px 20px 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:0 0 3px rgba(0,0,0,.5);
+}
+#popup .popup-content .close{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 8px;
+}
+#popup .active{
+  display: block;
+}
+
+/*
+.footer-menu ul li:not(:last-child){
+  border-right: 1px solid #ccc;}
+*/
