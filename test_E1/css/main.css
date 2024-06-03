@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "맑은 고딕";
+  color: #333;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+main{
+  display: flex;
+}
+
+aside{
+  width: 200px;
+}
+aside>*{
+  display: flex;
+}
+aside nav{
+  border: 1px solid #ebebeb;
+  line-height: 30px;
+}
+aside .main-menu li{
+  padding: 5px 10px;
+}
+aside .main-menu li+li{
+  border-top: 1px solid #ebebeb;
+}
+aside .main-menu .sub-menu{
+  display: none;
+}
