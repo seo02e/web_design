@@ -22,24 +22,111 @@ aside {
 aside > * {
   display: flex;
 }
+
+
 aside nav {
   border: 1px solid #ebebeb;
   line-height: 30px;
+  margin: 20px 10px;
+  position: relative;
 }
 aside .main-menu li {
-  padding: 5px 10px;s
-  transition: 0.3s;
+  padding: 5px 10px;
+  display: flex;
+  
 }
 aside .main-menu li + li {
   border-top: 1px solid #ebebeb;
 }
 aside .main-menu .sub-menu {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: calc(100vw - 200px);
 }
 
-aside .main-menu li:hover a {
+nav .main-menu li:hover{
   background: #333;
-  color: #fff
-  pos:r
-  
+  color: #fff;
+}
+
+.spotmenu{
+  display: flex;
+  justify-content: center;
+}
+.spotmenu li{
+  padding: 10px;
+  line-height: 1px;
+}
+.spotmenu li+li{
+  border-left: 1px solid #ccc;
+}
+.spotmenu li:hover{
+  text-decoration: underline;
+}
+
+
+.center{
+  width: 400px;
+}
+
+.shortcut{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.shortcut p{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.shortcut p span{
+  text-decoration: bold;
+}
+.shortcut >img{
+  width: 100px;
+  height: 100%;
+}
+
+.news-gallery{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+  align-items: center;
+}
+#notice{
+  width: 100%;
+}
+#notice ul li{
+  line-height: 35px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#notice li+li{
+  border-top: 1px solid #ccc;
+}
+#notice ul{
+  border: 1px solid #ccc;
+  background: #fff;
+}
+#notice h3{
+  border-radius: 0.5px 0.5px 0 0;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  display: inline;
+  margin-bottom: -1px;
+}
+
+#gallery>ul{
+  border: 1px solid #ccc;
+}
+
+
+
+.slide-wrapper{
+  width: calc(100% - 600px);
 }

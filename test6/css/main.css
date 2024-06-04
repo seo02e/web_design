@@ -14,6 +14,7 @@ a{
 }
 main{
   display: flex; /*까먹*/
+  colorL: 1px solid
 }
 
 aside nav{
@@ -24,12 +25,14 @@ aside nav{
 aside nav li{
   line-height: 40px;
   height: 40px;
+  
 }
 aside nav a{
   display: block;
   color: #333;
   padding: 0 5px;
   transition: 0.3s;
+  
 }
 aside nav li:hover>a{
   background: #666;
