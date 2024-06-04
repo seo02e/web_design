@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-*{
+* {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -12,26 +12,34 @@
   background: #fff;
 }
 
-main{
+main {
   display: flex;
 }
 
-aside{
+aside {
   width: 200px;
 }
-aside>*{
+aside > * {
   display: flex;
 }
-aside nav{
+aside nav {
   border: 1px solid #ebebeb;
   line-height: 30px;
 }
-aside .main-menu li{
-  padding: 5px 10px;
+aside .main-menu li {
+  padding: 5px 10px;s
+  transition: 0.3s;
 }
-aside .main-menu li+li{
+aside .main-menu li + li {
   border-top: 1px solid #ebebeb;
 }
-aside .main-menu .sub-menu{
+aside .main-menu .sub-menu {
   display: none;
+}
+
+aside .main-menu li:hover a {
+  background: #333;
+  color: #fff
+  pos:r
+  
 }
