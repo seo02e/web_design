@@ -31,9 +31,11 @@ aside nav {
   position: relative;
 }
 aside .main-menu li {
-  padding: 5px 10px;
   display: flex;
-  
+  width: 100%;
+}
+aside .main-menu li a{
+  padding: 0 5px;
 }
 aside .main-menu li + li {
   border-top: 1px solid #ebebeb;
@@ -42,8 +44,8 @@ aside .main-menu .sub-menu {
   display: none;
   position: absolute;
   top: 0;
-  left: 100%;
-  width: calc(100vw - 200px);
+  bottom: 100%;
+  width: 180px;
 }
 
 nav .main-menu li:hover{
@@ -101,19 +103,22 @@ nav .main-menu li:hover{
 }
 #notice ul li{
   line-height: 35px;
-  margin: 0 5px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+#notice ul a, #notice ul span{
+  padding: 0 5px;
 }
 #notice li+li{
   border-top: 1px solid #ccc;
 }
 #notice ul{
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   background: #fff;
 }
 #notice h3{
-  border-radius: 0.5px 0.5px 0 0;
+  border-radius: 5px 5px 0 0;
   background: #333;
   color: #fff;
   padding: 5px 10px;
@@ -121,12 +126,87 @@ nav .main-menu li:hover{
   margin-bottom: -1px;
 }
 
-#gallery>ul{
-  border: 1px solid #ccc;
+#gallery{
+  width: 100%;
 }
 
+#gallery>ul{
+  background: #fff;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+}
+#gallery img{
+  width: 160px;
+}
+#gallery ul li{
+  padding: 15px 0 ;
+  text-align: center;
+  width: 100%;
+}
+#gallery >h3{
+  border-radius: 5px 5px 0 0;
+  background: #333;
+  color: #fff;
+  display: inline;
+  padding: 5px 10px;
+}
+.banner{
+  width: 100%;
+  margin: 20px 0;
+}
+.banner ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+.banner ul img{
+  width: 80px;
+}
 
 
 .slide-wrapper{
   width: calc(100% - 600px);
+  height: calc(100% - 120px);
+  position: relative;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+
+}
+.container .slide{
+  position: absolute;
+}
+.container a>img{
+  object-fit: cover;
+}
+
+
+footer{
+  display: flex;
+}
+
+.footer-logo{
+  width: 200px;
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 200px);
+  justify-content: center;
+}
+.footer-content>div{
+  padding: 5px;
+}
+.footer-menu ul li{
+  display: inline;
+  padding: 0 10px;
+}
+
+
+.popup{
+  display: none;
 }
