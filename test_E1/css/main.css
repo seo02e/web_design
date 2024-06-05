@@ -14,44 +14,56 @@
 
 main {
   display: flex;
+  height: calc(100% - 120px);
+}
+a{
+  color: inherit;
+}
+.hidden{
+  display: none;
+}
+img{
+  vertical-align: top;
+}
+body{
+  width: 100%;
+  height: 100vw;
+}
+main .slide-wrapper{
+  flex: 1;
 }
 
+/*--------------------------------------*/
 aside {
   width: 200px;
 }
-aside > * {
-  display: flex;
+aside nav{
+  margin: 20px;
+  border: 1px solid #ccc;
 }
-
-
-aside nav {
-  border: 1px solid #ebebeb;
-  line-height: 30px;
-  margin: 20px 10px;
-  position: relative;
-}
-aside .main-menu li {
-  display: flex;
-  width: 100%;
-}
-aside .main-menu li a{
+aside nav a{
+  display: block;
   padding: 0 5px;
+  color: #333;
+  transition: 0.3s;
 }
-aside .main-menu li + li {
-  border-top: 1px solid #ebebeb;
+.main-menu li{
+  line-height: 35px;
 }
-aside .main-menu .sub-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 100%;
-  width: 180px;
+nav>ul>li+li{
+  border-top: 1px solid #ccc;
 }
-
-nav .main-menu li:hover{
+aside nav li:hover>a{
   background: #333;
   color: #fff;
 }
+
+
+.sub-menu{
+  display: none;
+  background: #fff;
+}
+
 
 .spotmenu{
   display: flex;
@@ -71,104 +83,88 @@ nav .main-menu li:hover{
 
 .center{
   width: 400px;
+  padding: 10px;
 }
-
+.center>*{
+  margin: 20px 0;
+}
 .shortcut{
   display: flex;
   align-items: center;
-  padding: 10px;
-}
-.shortcut p{
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.shortcut p span{
-  text-decoration: bold;
+  gap: 10px;
 }
 .shortcut >img{
   width: 100px;
-  height: 100%;
 }
 
-.news-gallery{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 20px;
-  align-items: center;
+
+.news-gallery h3{
+  border-radius: 5px 5px 0 0;
+  background: #333;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.news-gallery ul{
+  border: 1px solid #333;
 }
 #notice{
-  width: 100%;
+  margin-bottom: 20px;
 }
 #notice ul li{
   line-height: 35px;
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-#notice ul a, #notice ul span{
   padding: 0 5px;
 }
+
 #notice li+li{
   border-top: 1px solid #ccc;
 }
-#notice ul{
-  border: 1px solid #333;
-  background: #fff;
+#notice ul li:hover{
+  background: #ebebeb;
 }
-#notice h3{
-  border-radius: 5px 5px 0 0;
-  background: #333;
-  color: #fff;
-  padding: 5px 10px;
-  display: inline;
-  margin-bottom: -1px;
+#notice ul li a:hover{
+  font-weight: bold;
 }
 
 #gallery{
-  width: 100%;
+
 }
 
-#gallery>ul{
-  background: #fff;
-  border: 1px solid #333;
+#gallery ul{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  gap: 10px;
 }
 #gallery img{
-  width: 160px;
+  width: 100%;
 }
 #gallery ul li{
-  padding: 15px 0 ;
   text-align: center;
-  width: 100%;
+  transition: 0.3s;
 }
-#gallery >h3{
-  border-radius: 5px 5px 0 0;
-  background: #333;
-  color: #fff;
-  display: inline;
-  padding: 5px 10px;
+#gallery ul li:hover img{
+  opacity: 0.5;
 }
-.banner{
-  width: 100%;
-  margin: 20px 0;
-}
+
+
 .banner ul{
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+}
+.banner ul li{
   text-align: center;
 }
 .banner ul img{
-  width: 80px;
+  height: 50px;
 }
 
 
 .slide-wrapper{
   width: calc(100% - 600px);
-  height: calc(100% - 120px);
   position: relative;
   overflow: hidden;
 }
